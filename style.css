@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+.battery{
+    border: 5px solid whitesmoke;
+    width: 600px;
+    height: 130px;
+}
+.percentage{
+    animation-name: battery;
+    animation-duration: 10s;
+    width: 600px;
+    height: 130px;
+}
+.percentage .thunder{
+    width: 600px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes battery{
+    0%{
+        background-color: red;
+        width: 5%;
+    }
+    25%{
+        background-color: rgb(187, 91, 56);
+    }
+    50%{
+        background-color: rgb(179, 179, 109);
+    }
+    75%{
+        background-color: yellowgreen;
+    }
+    100%{
+        background-color: green;
+    }
+}
